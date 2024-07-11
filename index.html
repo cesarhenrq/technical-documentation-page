@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h2>Contents</h2>
+      </header>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+        <li><a href="#Operators" class="nav-link">Operators</a></li>
+        <li>
+          <a href="#Control_Statements" class="nav-link">Control Statements</a>
+        </li>
+        <li><a href="#Functions" class="nav-link">Functions</a></li>
+        <li>
+          <a href="#Preprocessor_Directives" class="nav-link"
+            >Preprocessor Directives</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <header>
+        <h1>C99 Documentation</h1>
+      </header>
+      <section id="Introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <article>
+          <p>
+            C99 is an informal name for the standard for the C programming
+            language as of 1999. It was developed by the American National
+            Standards Institute (ANSI). The C99 standard aims to provide a more
+            comprehensive and consistent specification for the C language, which
+            is widely used in system programming and other applications.
+          </p>
+        </article>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>
+          <h2>Variables</h2>
+        </header>
+        <article>
+          <p>
+            Variables are used to store data in a program. In C99, variables
+            must be declared before they are used. The declaration of a variable
+            specifies its type and name. For example, the following code
+            declares an integer variable named x:
+          </p>
+          <pre>
+                <code>
+                int x;
+                </code>
+            </pre>
+          <p>
+            In this example, the variable x is declared as an integer using the
+            int keyword. The variable can then be assigned a value using the
+            assignment operator (=). For example:
+          </p>
+          <pre>
+                <code>
+                x = 42;
+                </code>
+            </pre>
+        </article>
+      </section>
+      <section id="Data_Types" class="main-section">
+        <header>
+          <h2>Data Types</h2>
+        </header>
+        <article>
+          <p>
+            C99 provides several built-in data types for storing different kinds
+            of data. The most common data types include:
+          </p>
+          <ul>
+            <li>int: Integer data type for storing whole numbers.</li>
+            <li>
+              float: Floating-point data type for storing decimal numbers.
+            </li>
+            <li>char: Character data type for storing single characters.</li>
+          </ul>
+          <p>
+            In addition to these basic data types, C99 also provides modifiers
+            that can be used to modify the size and signedness of the data
+            types. For example, the long modifier can be used to create a long
+            integer data type, and the unsigned modifier can be used to create
+            an unsigned integer data type.
+          </p>
+        </article>
+      </section>
+      <section id="Operators" class="main-section">
+        <header>
+          <h2>Operators</h2>
+        </header>
+        <article>
+          <p>
+            Operators are symbols that are used to perform operations on
+            variables and values. C99 provides a wide range of operators for
+            performing arithmetic, logical, and bitwise operations. Some of the
+            most common operators include:
+          </p>
+          <ul>
+            <li>+ : Addition operator</li>
+            <li>- : Subtraction operator</li>
+            <li>* : Multiplication operator</li>
+            <li>/ : Division operator</li>
+            <li>% : Modulus operator</li>
+            <li>&amp;&amp; : Logical AND operator</li>
+            <li>|| : Logical OR operator</li>
+            <li>! : Logical NOT operator</li>
+            <li>& : Bitwise AND operator</li>
+            <li>| : Bitwise OR operator</li>
+            <li>^ : Bitwise XOR operator</li>
+            <li>&lt;&lt; : Left shift operator</li>
+            <li>&gt;&gt; : Right shift operator</li>
+          </ul>
+        </article>
+      </section>
+      <section id="Control_Statements" class="main-section">
+        <header>
+          <h2>Control Statements</h2>
+        </header>
+        <article>
+          <p>
+            Control statements are used to control the flow of a program. C99
+            provides several control statements for making decisions and
+            repeating code. Some of the most common control statements include:
+          </p>
+          <ul>
+            <li>
+              if statement: Executes a block of code if a specified condition is
+              true.
+            </li>
+            <li>
+              else statement: Executes a block of code if the same condition is
+              false.
+            </li>
+            <li>
+              while statement: Executes a block of code while a specified
+              condition is true.
+            </li>
+            <li>
+              for statement: Executes a block of code a specified number of
+              times.
+            </li>
+            <li>
+              switch statement: Executes a block of code based on the value of a
+              variable.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="Functions" class="main-section">
+        <header>
+          <h2>Functions</h2>
+        </header>
+        <article>
+          <p>
+            Functions are blocks of code that can be called from other parts of
+            a program. In C99, functions are declared using the following
+            syntax:
+          </p>
+          <pre>
+                <code>
+                return_type function_name(parameter1, parameter2, ...);
+                </code>
+            </pre>
+          <p>
+            For example, the following code declares a function named add that
+            takes two integer parameters and returns an integer:
+          </p>
+          <pre>
+                <code>
+                int add(int x, int y);
+                </code>
+            </pre>
+          <p>The function can then be defined using the following syntax:</p>
+          <pre>
+                <code>
+                int add(int x, int y) {
+                    return x + y;
+                }
+                </code>
+            </pre>
+          <p>
+            The function can be called from other parts of the program using the
+            function name and passing the required parameters. For example:
+          </p>
+          <pre>
+                <code>
+                int result = add(3, 4);
+                </code>
+          </pre>
+        </article>
+      </section>
+      <section id="Preprocessor_Directives" class="main-section">
+        <header>
+          <h2>Preprocessor Directives</h2>
+        </header>
+        <article>
+          <p>
+            Preprocessor directives are special commands that are processed by
+            the C preprocessor before the compilation of the program. C99
+            provides several preprocessor directives for including header files,
+            defining constants, and performing other tasks. Some of the most
+            common preprocessor directives include:
+          </p>
+          <ul>
+            <li>#include: Includes a header file in the program.</li>
+            <li>#define: Defines a constant value or a macro.</li>
+            <li>#ifdef: Checks if a macro is defined.</li>
+            <li>#ifndef: Checks if a macro is not defined.</li>
+            <li>#endif: Ends an #ifdef or #ifndef block.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
